@@ -1,0 +1,18 @@
+#!name=12306去广告
+#!desc=去除12306开屏广告和部分应用内广告
+#!author=RuCu6[https://github.com/RuCu6]
+#!icon=https://raw.githubusercontent.com/yangzixmt/MyAdblocks/main/Icons/app/12306.png
+#!date=2024-10-23 10:05
+
+[Rule]
+# ======= 0 ======= #
+# 12306
+DOMAIN, ad.12306.cn, DIRECT
+
+[Script]
+# 12306 //ad.12306.cn, mobile.12306.cn
+http-request ^https:\/\/ad\.12306\.cn\/ad\/ser\/getAdList$ script-path = https://raw.githubusercontent.com/yangzixmt/MyAdblocks/main/Scripts/12306.js, requires-body = true, tag = 12306_splash
+http-response ^https:\/\/mobile\.12306\.cn\/otsmobile\/app\/mgs\/mgw\.htm$ script-path = https://raw.githubusercontent.com/yangzixmt/MyAdblocks/main/Scripts/header.js, tag = 12306_appin
+
+[MITM]
+hostname = ad.12306.cn, mobile.12306.cn
