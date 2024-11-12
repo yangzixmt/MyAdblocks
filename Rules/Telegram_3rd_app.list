@@ -1,7 +1,10 @@
 # Telegram第三方客户端
-DOMAIN,api.swiftgram.app
+# Nicegram
 DOMAIN-KEYWORD,nicegram
+# iMe
 DOMAIN,api.mixpanel.com
 DOMAIN-SUFFIX,imem.app
+# Swiftgram
 DOMAIN-SUFFIX,swiftgram.app
+# Turrit
 DOMAIN-SUFFIX,iturrit.com
