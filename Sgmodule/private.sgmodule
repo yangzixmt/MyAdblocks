@@ -4,23 +4,8 @@
 
 [Rule]
 # > 规则补充
-# AND,((OR,((PROTOCOL,UDP), (PROTOCOL,QUIC))), (DEST-PORT,443)),REJECT-NO-DROP
-# DOMAIN-SUFFIX,fotmob.com,SMART-US // Added for: data.fotmob.com:443
 DOMAIN-SUFFIX,kelee.one,DIRECT // Added for: https://kelee.one/Resource/Script/WexinMiniPrograms/xiaotucc/xiaotucc.js
-# DOMAIN,cloud.halo.do,DIRECT // Added for: cloud.halo.do:443
 DOMAIN,video-cn.snssdk.com,DIRECT // Added for: video-cn.snssdk.com:443
-# DOMAIN,emby.flowercloud.yt,FlowerCloud // Added for: emby.flowercloud.yt:443
-# DOMAIN,shenmi.link,Emby // Added for: shenmi.link:443
-DOMAIN-SUFFIX,clevertap-prod.com,DIRECT // Added for: clevertap-prod.com:443
-# DOMAIN,src-emby.cn2gias.uk,Emby // Added for: src-emby.cn2gias.uk:443
-# DOMAIN,emby.cn2gias.uk,守候网络 // Added for: emby.cn2gias.uk:443
-# DOMAIN,porn.aca.best,Emby // Added for: porn.aca.best:443
-# DOMAIN,emby.aca.best,Emby // Added for: emby.aca.best:443
-# DOMAIN,notnetflix.cos.cat,Emby
-DOMAIN,stats.gc.apple.com,DIRECT // Added for: stats.gc.apple.com:443
 DOMAIN,dig.bdurl.net,DIRECT // Added for: dig.bdurl.net:443
 DOMAIN,is.snssdk.com,DIRECT,extended-matching
 DOMAIN,i.snssdk.com,DIRECT // Added for: i.snssdk.com:443
-DOMAIN,m.hotmail.com,DIRECT
-DOMAIN,imap-mail.outlook.com,DIRECT // Added for: imap-mail.outlook.com:993
-DOMAIN-SUFFIX,263.net,DIRECT
