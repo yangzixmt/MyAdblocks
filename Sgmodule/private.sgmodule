@@ -14,8 +14,3 @@ DOMAIN,src-emby.cn2gias.uk,SNTP // Added for: src-emby.cn2gias.uk:443
 DOMAIN,emby.cn2gias.uk,GlobalMedia // Added for: emby.cn2gias.uk:443
 DOMAIN,porn.aca.best,GlobalMedia // Added for: porn.aca.best:443
 DOMAIN,emby.aca.best,GlobalMedia // Added for: emby.aca.best:443
-DOMAIN-SUFFIX,kelee.one,DIRECT // Added for: kelee
-DOMAIN,video-cn.snssdk.com,DIRECT // Added for: video-cn.snssdk.com:443
-DOMAIN,dig.bdurl.net,DIRECT // Added for: dig.bdurl.net:443
-DOMAIN,is.snssdk.com,DIRECT,extended-matching
-DOMAIN,i.snssdk.com,DIRECT // Added for: i.snssdk.com:443
