@@ -13,4 +13,5 @@ DOMAIN,video-cn.snssdk.com,DIRECT
 DOMAIN,dig.bdurl.net,DIRECT
 DOMAIN,is.snssdk.com,DIRECT
 DOMAIN,i.snssdk.com,DIRECT
+IP-CIDR,95.161.76.100/31,REJECT,'notification-text="Fuck Telegram"',pre-matching,no-resolve
 
