@@ -1,21 +1,18 @@
 #!name= 自用规则补充
 #!desc= 纯自用
 #!date=2024-11-19
-#!arguments=Proxy:Proxy,Emby:GlobalMedia,DIRECT:DIRECT
+#!arguments=Proxy:Proxy,Emby:GlobalMedia
 [Rule]
-# > 规则补充
-# 代理规则
+# 优先代理规则
 DOMAIN-SUFFIX,steamcommunity.com,{{{Proxy}}} // Added for: steamcommunity.com:443
-DOMAIN-SUFFIX,canarymail.io,{{{Proxy}}} // Added for: protect.canarymail.io:443
-DOMAIN-SUFFIX,fotmob.com,{{{Proxy}}} // Added for: data.fotmob.com:443
 # 优先直连规则
-DOMAIN,video-cn.snssdk.com,{{{DIRECT}}}
-DOMAIN,dig.bdurl.net,{{{DIRECT}}}
-DOMAIN,is.snssdk.com,{{{DIRECT}}}
-DOMAIN,i.snssdk.com,{{{DIRECT}}}
-# 直连EMBY
+DOMAIN,video-cn.snssdk.com,DIRECT
+DOMAIN,dig.bdurl.net,DIRECT
+DOMAIN,is.snssdk.com,DIRECT
+DOMAIN,i.snssdk.com,DIRECT
+# 可直连EMBY
 IP-CIDR,46.3.101.30/32,{{{Emby}}},no-resolve //鹅
-# 拦截规则
+# 拦截规则补充
 DOMAIN,api.liquidlink.cn,REJECT,pre-matching // Added for: api.liquidlink.cn:443
 IP-CIDR,95.161.76.100/31,REJECT,pre-matching,no-resolve //telegram
 
