@@ -1,17 +1,22 @@
 #!name= 自用规则补充
 #!desc= 纯自用
-#!date=2024-11-13 15:37:24
-
+#!date=2024-11-19
+#!arguments=Proxy:Proxy,Emby:GlobalMedia,DIRECT:DIRECT,禁用拦截:
 [Rule]
 # > 规则补充
-DOMAIN,steamcommunity.com,Proxy // Added for: steamcommunity.com:443
-DOMAIN-SUFFIX,canarymail.io,SMART-SG // Added for: protect.canarymail.io:443
-DOMAIN-SUFFIX,fotmob.com,SMART-US // Added for: data.fotmob.com:443
-DOMAIN,api.liquidlink.cn,REJECT,pre-matching // Added for: api.liquidlink.cn:443
-DOMAIN,emby.flowercloud.yt,FLOWERCLOUD // Added for: emby.flowercloud.yt:443
-DOMAIN,video-cn.snssdk.com,DIRECT
-DOMAIN,dig.bdurl.net,DIRECT
-DOMAIN,is.snssdk.com,DIRECT
-DOMAIN,i.snssdk.com,DIRECT
-IP-CIDR,95.161.76.100/31,REJECT,pre-matching,no-resolve
+# 代理规则
+DOMAIN-SUFFIX,steamcommunity.com,{{{Proxy}}} // Added for: steamcommunity.com:443
+DOMAIN-SUFFIX,canarymail.io,{{{Proxy}}} // Added for: protect.canarymail.io:443
+DOMAIN-SUFFIX,fotmob.com,{{{Proxy}}} // Added for: data.fotmob.com:443
+# 直连规则
+DOMAIN,video-cn.snssdk.com,{{{DIRECT}}}
+DOMAIN,dig.bdurl.net,{{{DIRECT}}}
+DOMAIN,is.snssdk.com,{{{DIRECT}}}
+DOMAIN,i.snssdk.com,{{{DIRECT}}}
+# 直连EMBY
+IP-CIDR,46.3.101.30/32,{{{Emby}}},no-resolve //鹅
+# 拦截规则
+{{{禁用拦截}}}DOMAIN,api.liquidlink.cn,REJECT,pre-matching // Added for: api.liquidlink.cn:443
+{{{禁用拦截}}}IP-CIDR,95.161.76.100/31,REJECT,pre-matching,no-resolve //telegram
+
 
