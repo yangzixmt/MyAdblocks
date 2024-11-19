@@ -1,7 +1,7 @@
 #!name= 自用规则补充
 #!desc= 纯自用
 #!date=2024-11-19
-#!arguments=Proxy:Proxy,Emby:GlobalMedia,DIRECT:DIRECT,禁用拦截:
+#!arguments=Proxy:Proxy,Emby:GlobalMedia,DIRECT:DIRECT
 [Rule]
 # > 规则补充
 # 代理规则
