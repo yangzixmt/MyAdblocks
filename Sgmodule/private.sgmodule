@@ -1,7 +1,7 @@
 #!name= 自用规则补充
 #!desc= 纯自用
 #!date=2024-11-19
-#!arguments=Proxy:Proxy,Emby:GlobalMedia
+#!arguments=Proxy:Proxy,Emby:GlobalMedia,AdBlock:REJECT
 [Rule]
 # 优先代理规则
 DOMAIN-SUFFIX,steamcommunity.com,{{{Proxy}}} // Added for: steamcommunity.com:443
@@ -15,5 +15,29 @@ IP-CIDR,46.3.101.30/32,{{{Emby}}},no-resolve //鹅
 # 拦截规则补充
 DOMAIN,api.liquidlink.cn,REJECT,pre-matching // Added for: api.liquidlink.cn:443
 IP-CIDR,95.161.76.100/31,REJECT,pre-matching,no-resolve //telegram
+# 可放行规则 主要是奖励视频
+DOMAIN,ii.gdt.qq.com,{{{AdBlock}}} 
+DOMAIN,adsmind.gdtimg.com,{{{AdBlock}}} 
+DOMAIN,pv.sohu.com,{{{AdBlock}}} 
+DOMAIN,gw.365you.com,{{{AdBlock}}} 
+DOMAIN,x.adnet.qq.com,{{{AdBlock}}} 
+DOMAIN,mi.gdt.qq.com,{{{AdBlock}}} 
+DOMAIN,c.gdt.qq.com,{{{AdBlock}}} 
+DOMAIN,d.gdt.qq.com,{{{AdBlock}}} 
+DOMAIN,i.gdt.qq.com,{{{AdBlock}}} 
+DOMAIN,m.gdt.qq.com,{{{AdBlock}}} 
+DOMAIN,t.gdt.qq.com,{{{AdBlock}}} 
+DOMAIN,v.gdt.qq.com,{{{AdBlock}}} 
+DOMAIN,q.i.gdt.qq.com,{{{AdBlock}}} 
+DOMAIN,v2.gdt.qq.com,{{{AdBlock}}} 
+DOMAIN,ii.gdt.qq.com,{{{AdBlock}}} 
+DOMAIN,rm.gdt.qq.com,{{{AdBlock}}} 
+DOMAIN,nc.gdt.qq.com,{{{AdBlock}}} 
+DOMAIN,vr.gdt.qq.com,{{{AdBlock}}} 
+DOMAIN,rpt.gdt.qq.com,{{{AdBlock}}} 
+DOMAIN,win.gdt.qq.com,{{{AdBlock}}} 
+DOMAIN,ipv4.gdt.qq.com,{{{AdBlock}}} 
+DOMAIN,v6ii.gdt.qq.com,{{{AdBlock}}} 
+
 
 
