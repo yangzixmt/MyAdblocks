@@ -43,8 +43,6 @@ DOMAIN,v6ii.gdt.qq.com,{{{拦截规则}}}
 [Header Rewrite]
 # changeUA
 {{{禁用重写}}} ^https?:\/\/kelee\.one(\/.*) header-replace User-Agent "Loon/784 CFNetwork/1408.0.4 Darwin/22.5.0"
-{{{禁用重写}}} ^https?:\/\/kelee\.one(\/.*) response-header Content-Type "application/octet-stream text/plain"
-{{{禁用重写}}} ^https?:\/\/kelee\.one(\/.*) response-header CContent-Disposition "attachment inline"
 
 [MITM]
 {{{禁用MITM}}} = %APPEND% kelee.one
