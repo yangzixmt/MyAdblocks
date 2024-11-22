@@ -1,7 +1,7 @@
 #!name= 自用规则补充
 #!desc= 纯自用
 #!date=2024-11-19
-#!arguments=Proxy:Proxy,Emby:GlobalMedia,拦截规则:REJECT,禁用MITM:hostname,禁用重写:http-request
+#!arguments=Proxy:Proxy,Emby:GlobalMedia,拦截规则:REJECT,禁用MITM:hostname,禁用重写:http-
 [Rule]
 # 优先代理规则
 DOMAIN-SUFFIX,steamcommunity.com,{{{Proxy}}} // Added for: steamcommunity.com:443
@@ -42,7 +42,8 @@ DOMAIN,v6ii.gdt.qq.com,{{{拦截规则}}}
 
 [Header Rewrite]
 # changeUA
-{{{禁用重写}}} ^https?:\/\/kelee\.one(\/.*) header-replace User-Agent "Loon/784 CFNetwork/1408.0.4 Darwin/22.5.0"
+{{{禁用重写}}}request ^https?:\/\/kelee\.one(\/.*) header-replace User-Agent "Loon/784 CFNetwork/1408.0.4 Darwin/22.5.0"
+{{{禁用重写}}}response ^https://kelee\.one/Tool/Loon/Plugin/.*\.plugin header-replace Content-Type "text/xhtml;charset=utf8"
 
 [MITM]
 {{{禁用MITM}}} = %APPEND% kelee.one
