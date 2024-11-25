@@ -1,0 +1,23 @@
+# 可放行规则 主要是奖励视频
+DOMAIN,ii.gdt.qq.com 
+DOMAIN,adsmind.gdtimg.com 
+DOMAIN,pv.sohu.com 
+DOMAIN,gw.365you.com 
+DOMAIN,x.adnet.qq.com 
+DOMAIN,mi.gdt.qq.com 
+DOMAIN,c.gdt.qq.com 
+DOMAIN,d.gdt.qq.com 
+DOMAIN,i.gdt.qq.com 
+DOMAIN,m.gdt.qq.com 
+DOMAIN,t.gdt.qq.com 
+DOMAIN,v.gdt.qq.com 
+DOMAIN,q.i.gdt.qq.com 
+DOMAIN,v2.gdt.qq.com 
+DOMAIN,ii.gdt.qq.com 
+DOMAIN,rm.gdt.qq.com 
+DOMAIN,nc.gdt.qq.com 
+DOMAIN,vr.gdt.qq.com 
+DOMAIN,rpt.gdt.qq.com 
+DOMAIN,win.gdt.qq.com 
+DOMAIN,ipv4.gdt.qq.com 
+DOMAIN,v6ii.gdt.qq.com 
