@@ -1,0 +1,30 @@
+#!name = private
+#!desc = 自用规则
+#!author = yz
+#!date = 2024-11-25 16:25:33
+
+[Rule]
+# 可放行规则 主要是奖励视频
+DOMAIN,ii.gdt.qq.com,PROXY
+DOMAIN,adsmind.gdtimg.com,PROXY
+DOMAIN,pv.sohu.com,PROXY 
+DOMAIN,gw.365you.com,PROXY 
+DOMAIN,x.adnet.qq.com,PROXY 
+DOMAIN,mi.gdt.qq.com,PROXY 
+DOMAIN,c.gdt.qq.com,PROXY 
+DOMAIN,d.gdt.qq.com,PROXY 
+DOMAIN,i.gdt.qq.com,PROXY
+DOMAIN,m.gdt.qq.com,PROXY 
+DOMAIN,t.gdt.qq.com,PROXY 
+DOMAIN,v.gdt.qq.com,PROXY 
+DOMAIN,q.i.gdt.qq.com,PROXY 
+DOMAIN,v2.gdt.qq.com,PROXY 
+DOMAIN,ii.gdt.qq.com,PROXY 
+DOMAIN,rm.gdt.qq.com,PROXY 
+DOMAIN,nc.gdt.qq.com,PROXY 
+DOMAIN,vr.gdt.qq.com,PROXY 
+DOMAIN,rpt.gdt.qq.com,PROXY 
+DOMAIN,win.gdt.qq.com,PROXY 
+DOMAIN,ipv4.gdt.qq.com,PROXY 
+DOMAIN,v6ii.gdt.qq.com,PROXY 
+
